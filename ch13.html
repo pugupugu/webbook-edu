@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>13장. 꼭 필요한 플러그인만 | 워드프레스, 이것만 알면 충분해</title>
+<meta name="description" content="워드프레스, 이것만 알면 충분해">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><button id="menu" aria-label="차례 열기" aria-controls="side" aria-expanded="false">차례</button><a href="index.html" class="brand">워드프레스, 이것만 알면 충분해</a></header>
+<div class="layout">
+<nav class="side" id="side" aria-label="차례">
+<a class="home" href="index.html">웹북 소개</a>
+<div class="part">0부 시작하기 전에</div>
+<a class="ch" href="ch00.html"><span class="n">0</span><span class="t">이 웹북 사용법</span></a>
+<a class="ch" href="ch01.html"><span class="n">1</span><span class="t">워드프레스, 딱 이만큼만 이해하기</span></a>
+<div class="part">1부 설치하기</div>
+<a class="ch" href="ch02.html"><span class="n">2</span><span class="t">설치 전에 결정할 것</span></a>
+<a class="ch" href="ch03.html"><span class="n">3</span><span class="t">직접 설치하기 — 워드프레스 다운로드부터</span></a>
+<a class="ch" href="ch04.html"><span class="n">4</span><span class="t">카페24로 쉽게 설치하기</span></a>
+<div class="part">2부 첫 설정과 화면 익히기</div>
+<a class="ch" href="ch05.html"><span class="n">5</span><span class="t">관리자 화면(대시보드) 둘러보기</span></a>
+<a class="ch" href="ch06.html"><span class="n">6</span><span class="t">처음 한 번만 하면 되는 필수 설정</span></a>
+<div class="part">3부 콘텐츠 만들기</div>
+<a class="ch" href="ch07.html"><span class="n">7</span><span class="t">글(Post)과 페이지(Page)</span></a>
+<a class="ch" href="ch08.html"><span class="n">8</span><span class="t">블록 에디터, 이것만 알면 충분해</span></a>
+<a class="ch" href="ch09.html"><span class="n">9</span><span class="t">이미지와 미디어</span></a>
+<div class="part">4부 디자인 꾸미기</div>
+<a class="ch" href="ch10.html"><span class="n">10</span><span class="t">테마 고르고 적용하기</span></a>
+<a class="ch" href="ch11.html"><span class="n">11</span><span class="t">사이트 편집기로 내 사이트 꾸미기</span></a>
+<div class="part">5부 기능 더하기</div>
+<a class="ch" href="ch12.html"><span class="n">12</span><span class="t">플러그인 기본기</span></a>
+<a class="ch on" href="ch13.html"><span class="n">13</span><span class="t">꼭 필요한 플러그인만</span></a>
+<div class="part">6부 운영하고 지키기</div>
+<a class="ch" href="ch14.html"><span class="n">14</span><span class="t">업데이트와 백업</span></a>
+<a class="ch" href="ch15.html"><span class="n">15</span><span class="t">보안 기본 수칙</span></a>
+<a class="ch" href="ch16.html"><span class="n">16</span><span class="t">검색 노출과 속도 기초</span></a>
+<a class="ch" href="ch17.html"><span class="n">17</span><span class="t">문제가 생겼을 때</span></a>
+<div class="part">7부 마무리</div>
+<a class="ch" href="ch18.html"><span class="n">18</span><span class="t">실습 프로젝트 — 내 사이트 완성하기</span></a>
+<a class="ch" href="ch19.html"><span class="n">19</span><span class="t">다음 단계로</span></a>
+<div class="part">부록</div>
+<a class="ch" href="appendix.html"><span class="n">附</span><span class="t">용어집 · 자주 묻는 질문 · 단축키</span></a>
+</nav>
+<main class="content">
+<div class="wb">
+<header class="opener"><div class="kicker">CHAPTER<span class="num">13</span></div><h1>꼭 필요한 플러그인만</h1><div class="goals"><span class="label">이 장에서 배울 것</span><ul>
+<li>대부분의 사이트에 필요한 플러그인 여섯 가지 용도를 안다.</li>
+<li>용도별로 플러그인 하나씩을 골라 설치할 수 있다.</li>
+<li>같은 용도의 플러그인을 겹쳐 설치하지 않는다.</li>
+</ul></div></header>
+
+<h2><span class="sec">13.1</span>용도별로 하나씩이면 충분합니다</h2>
+<p>작은 사이트에 필요한 플러그인은 대개 여섯 가지 용도로 정리됩니다. 보안, 백업, 검색 노출(SEO), 문의 폼, 속도(캐시), 스팸 방지입니다. 용도마다 하나씩만 고르면 됩니다.</p>
+<p>아래 표는 공식 저장소에서 오랫동안 많이 쓰여 온 무료 플러그인입니다. 이 웹북이 추천하는 것은 특정 제품이 아니라 "용도마다 하나"라는 원칙이므로, 12장의 기준으로 확인해 보고 다른 플러그인을 골라도 괜찮습니다. 플러그인 이름과 기능은 업데이트로 바뀔 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>용도</th>
+<th>대표 플러그인 (무료)</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보안</td>
+<td>Wordfence Security</td>
+<td>로그인 공격 차단, 악성 코드 검사</td>
+</tr>
+<tr>
+<td>백업</td>
+<td>UpdraftPlus</td>
+<td>사이트 전체를 정해진 주기로 자동 백업</td>
+</tr>
+<tr>
+<td>검색 노출</td>
+<td>Yoast SEO 또는 Rank Math</td>
+<td>검색 결과 제목·설명 관리, 사이트맵 생성</td>
+</tr>
+<tr>
+<td>문의 폼</td>
+<td>Contact Form 7 또는 WPForms Lite</td>
+<td>문의하기 양식 만들기</td>
+</tr>
+<tr>
+<td>속도</td>
+<td>WP Super Cache 등 캐시 플러그인</td>
+<td>페이지를 미리 만들어 두어 빠르게 보여 줌</td>
+</tr>
+<tr>
+<td>스팸 방지</td>
+<td>Akismet 또는 Antispam Bee</td>
+<td>스팸 댓글·문의 자동 차단</td>
+</tr>
+</tbody>
+</table>
+
+<h2><span class="sec">13.2</span>용도별로 알아 둘 점</h2>
+<p><strong>보안.</strong> 보안 플러그인은 로그인 화면에 비밀번호를 수없이 넣어 보는 공격을 막고, 수상한 파일이 생기면 알려 줍니다. 설치 후 기본 설정만으로도 효과가 있습니다. 15장의 보안 수칙과 함께 쓰세요.</p>
+<p><strong>백업.</strong> 백업 플러그인은 반드시 설치해야 하는 플러그인입니다. 백업 파일은 서버 안이 아니라 구글 드라이브나 드롭박스 같은 외부 저장소에 보관되도록 설정하세요. 서버에 문제가 생기면 서버 안의 백업도 함께 사라지기 때문입니다. 설정과 복원 방법은 14장에서 실습합니다.</p>
+<p><strong>검색 노출.</strong> SEO 플러그인은 글마다 검색 결과에 보일 제목과 설명을 따로 정할 수 있게 해 주고, 검색 엔진에 제출할 <strong>사이트맵</strong>을 자동으로 만들어 줍니다. 16장에서 이 사이트맵을 쓰게 됩니다. SEO 플러그인은 두 개를 함께 쓰면 서로 충돌하니 하나만 고르세요.</p>
+<p><strong>문의 폼.</strong> 방문자가 이름, 이메일, 내용을 입력해 보내면 내 이메일로 전달됩니다. 설치 후 만들어지는 짧은 코드(숏코드)나 전용 블록을 "문의" 페이지에 넣으면 됩니다. 폼을 만든 뒤에는 직접 한 번 보내 보고 메일이 잘 오는지 꼭 확인하세요.</p>
+<p><strong>속도.</strong> 캐시 플러그인은 자주 보는 페이지를 미리 만들어 두었다가 바로 보여 줘서 사이트를 빠르게 합니다. 다만 호스팅에 따라 서버 자체에서 캐시를 제공하는 경우가 있습니다. 예를 들어 LiteSpeed 서버를 쓰는 호스팅은 LiteSpeed Cache 플러그인이 가장 잘 맞습니다. 호스팅 안내를 먼저 확인하고, 캐시 플러그인도 하나만 쓰세요.</p>
+<p><strong>스팸 방지.</strong> 댓글이나 문의 폼을 열어 두면 광고성 스팸이 반드시 들어옵니다. Akismet은 워드프레스를 만든 회사의 서비스로 정확도가 높지만, 개인 사이트가 아닌 상업용 사이트는 유료 요금제가 필요할 수 있습니다. 무료로 쓰고 싶다면 Antispam Bee 같은 대안이 있습니다.</p>
+<aside class="slot"><span class="label">그림 자리 IMG-13-1 | 캡처</span>
+<ul>
+<li>내용: 여섯 가지 플러그인을 설치한 뒤의 "설치된 플러그인" 목록 화면</li>
+<li>준비 방법: 실습 사이트에 플러그인을 설치·활성화한 뒤 목록 캡처</li>
+<li>파일명: img-13-1_필수-플러그인-목록.png</li>
+</ul></aside>
+
+<h2><span class="sec">13.3</span>겹치지 않게, 하나씩 확인하며</h2>
+<p>플러그인을 설치할 때는 한 번에 여러 개를 깔지 말고 하나씩 설치하세요. 하나를 설치하고 활성화한 뒤 사이트가 잘 보이는지 확인하고, 다음 것을 설치합니다. 문제가 생겨도 방금 설치한 것이 원인이라는 것을 바로 알 수 있습니다.</p>
+<p>같은 용도의 플러그인을 두 개 쓰는 것도 피하세요. 보안 플러그인 두 개, 캐시 플러그인 두 개를 함께 쓰면 서로 같은 일을 하려다 부딪혀 오류가 나거나 사이트가 오히려 느려집니다.</p>
+<p class="example"><span class="label">예를 들면</span>카페24 매니지드 호스팅처럼 호스팅이 보안과 캐시를 이미 제공하는 경우, 보안·캐시 플러그인을 또 설치하면 기능이 겹칩니다. 이럴 때는 호스팅의 안내를 따르고 백업, SEO, 문의 폼처럼 호스팅이 대신해 주지 않는 용도만 플러그인으로 채우면 됩니다.</p>
+
+<section class="check"><h2>스스로 확인하기 — 13장을 마쳤다면</h2><ul>
+<li>여섯 가지 용도(보안, 백업, SEO, 문의 폼, 속도, 스팸 방지)를 안다.</li>
+<li>백업 플러그인을 설치하고 외부 저장소를 연결했다.</li>
+<li>SEO 플러그인을 하나만 설치했다.</li>
+<li>문의 폼을 만들어 직접 보내 보고 메일이 오는지 확인했다.</li>
+<li>같은 용도의 플러그인이 두 개 설치되어 있지 않다.</li>
+</ul></section><p class="next">5부를 마쳤습니다. 다음 장부터는 사이트를 오래 안전하게 운영하는 법을 배웁니다.</p>
+</div>
+<div class="pn"><a class="prev" href="ch12.html"><small>이전</small>12장 플러그인 기본기</a><a class="nextc" href="ch14.html"><small>다음</small>14장 업데이트와 백업</a></div>
+</main></div>
+<script>
+(function(){var b=document.getElementById('menu'),s=document.getElementById('side');
+b.onclick=function(){var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+var a=s.querySelector('.on');if(a&&a.scrollIntoView){var r=a.offsetTop-s.clientHeight/3;s.scrollTop=r>0?r:0}
+document.querySelectorAll('figure img').forEach(function(i){
+ function miss(){var d=document.createElement('div');d.className='imgmiss';d.textContent='그림: '+i.alt;i.replaceWith(d)}
+ if(i.complete&&i.naturalWidth===0)miss();else i.addEventListener('error',miss)});})();
+</script></body></html>

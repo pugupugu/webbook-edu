@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>17장. 문제가 생겼을 때 | 워드프레스, 이것만 알면 충분해</title>
+<meta name="description" content="워드프레스, 이것만 알면 충분해">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><button id="menu" aria-label="차례 열기" aria-controls="side" aria-expanded="false">차례</button><a href="index.html" class="brand">워드프레스, 이것만 알면 충분해</a></header>
+<div class="layout">
+<nav class="side" id="side" aria-label="차례">
+<a class="home" href="index.html">웹북 소개</a>
+<div class="part">0부 시작하기 전에</div>
+<a class="ch" href="ch00.html"><span class="n">0</span><span class="t">이 웹북 사용법</span></a>
+<a class="ch" href="ch01.html"><span class="n">1</span><span class="t">워드프레스, 딱 이만큼만 이해하기</span></a>
+<div class="part">1부 설치하기</div>
+<a class="ch" href="ch02.html"><span class="n">2</span><span class="t">설치 전에 결정할 것</span></a>
+<a class="ch" href="ch03.html"><span class="n">3</span><span class="t">직접 설치하기 — 워드프레스 다운로드부터</span></a>
+<a class="ch" href="ch04.html"><span class="n">4</span><span class="t">카페24로 쉽게 설치하기</span></a>
+<div class="part">2부 첫 설정과 화면 익히기</div>
+<a class="ch" href="ch05.html"><span class="n">5</span><span class="t">관리자 화면(대시보드) 둘러보기</span></a>
+<a class="ch" href="ch06.html"><span class="n">6</span><span class="t">처음 한 번만 하면 되는 필수 설정</span></a>
+<div class="part">3부 콘텐츠 만들기</div>
+<a class="ch" href="ch07.html"><span class="n">7</span><span class="t">글(Post)과 페이지(Page)</span></a>
+<a class="ch" href="ch08.html"><span class="n">8</span><span class="t">블록 에디터, 이것만 알면 충분해</span></a>
+<a class="ch" href="ch09.html"><span class="n">9</span><span class="t">이미지와 미디어</span></a>
+<div class="part">4부 디자인 꾸미기</div>
+<a class="ch" href="ch10.html"><span class="n">10</span><span class="t">테마 고르고 적용하기</span></a>
+<a class="ch" href="ch11.html"><span class="n">11</span><span class="t">사이트 편집기로 내 사이트 꾸미기</span></a>
+<div class="part">5부 기능 더하기</div>
+<a class="ch" href="ch12.html"><span class="n">12</span><span class="t">플러그인 기본기</span></a>
+<a class="ch" href="ch13.html"><span class="n">13</span><span class="t">꼭 필요한 플러그인만</span></a>
+<div class="part">6부 운영하고 지키기</div>
+<a class="ch" href="ch14.html"><span class="n">14</span><span class="t">업데이트와 백업</span></a>
+<a class="ch" href="ch15.html"><span class="n">15</span><span class="t">보안 기본 수칙</span></a>
+<a class="ch" href="ch16.html"><span class="n">16</span><span class="t">검색 노출과 속도 기초</span></a>
+<a class="ch on" href="ch17.html"><span class="n">17</span><span class="t">문제가 생겼을 때</span></a>
+<div class="part">7부 마무리</div>
+<a class="ch" href="ch18.html"><span class="n">18</span><span class="t">실습 프로젝트 — 내 사이트 완성하기</span></a>
+<a class="ch" href="ch19.html"><span class="n">19</span><span class="t">다음 단계로</span></a>
+<div class="part">부록</div>
+<a class="ch" href="appendix.html"><span class="n">附</span><span class="t">용어집 · 자주 묻는 질문 · 단축키</span></a>
+</nav>
+<main class="content">
+<div class="wb">
+<header class="opener"><div class="kicker">CHAPTER<span class="num">17</span></div><h1>문제가 생겼을 때</h1><div class="goals"><span class="label">이 장에서 배울 것</span><ul>
+<li>자주 겪는 문제 다섯 가지의 원인과 해결법을 안다.</li>
+<li>플러그인 충돌을 찾아낼 수 있다.</li>
+<li>혼자 해결하기 어려울 때 도움을 받을 수 있다.</li>
+</ul></div></header>
+
+<h2><span class="sec">17.1</span>먼저, 침착하게</h2>
+<p>사이트가 갑자기 이상해지면 당황해서 이것저것 눌러 보기 쉽습니다. 하지만 대부분의 문제는 원인이 단순하고, 순서대로 확인하면 해결됩니다. 문제가 생기면 아래 순서를 떠올리세요.</p>
+<figure><img alt="문제 해결 순서" src="images/fig-17-1.png" /><figcaption><b>그림 17-1.</b>오류 메시지를 기록하고, 최근 바꾼 것부터 의심합니다.</figcaption></figure>
+<p>가장 먼저 할 일은 화면에 나온 <strong>오류 메시지를 캡처</strong>하는 것입니다. 나중에 검색하거나 도움을 요청할 때 가장 중요한 단서가 됩니다. 그다음 "문제가 생기기 직전에 무엇을 했는지" 떠올립니다. 플러그인 설치, 업데이트, 테마 변경처럼 최근에 바꾼 것이 원인인 경우가 대부분입니다.</p>
+
+<h2><span class="sec">17.2</span>자주 겪는 문제 다섯 가지</h2>
+<p><strong>하얀 화면만 나올 때.</strong> 아무 글자도 없이 하얀 화면이나 "사이트에 치명적인 오류가 있습니다"라는 문구만 보이는 경우입니다. 대부분 플러그인이나 테마가 원인입니다. 워드프레스는 이럴 때 관리자 이메일로 "복구 모드" 링크를 보내 줍니다. 메일함을 확인해 그 링크로 들어가면 문제의 플러그인을 비활성화할 수 있습니다. 메일이 없다면 17.3절의 방법을 씁니다.</p>
+<p><strong>로그인이 안 될 때.</strong> 먼저 주소가 <code>/wp-admin</code>이 맞는지 확인합니다. 비밀번호가 기억나지 않으면 로그인 화면의 <strong>비밀번호를 잊으셨나요?</strong>를 눌러 관리자 이메일로 재설정합니다. 보안 플러그인이 로그인 실패가 반복된 것을 공격으로 보고 잠시 막은 경우도 있으니, 몇십 분 기다린 뒤 다시 시도해 보세요.</p>
+<p><strong>오류 메시지가 나올 때.</strong> "데이터베이스 연결 설정 오류"는 서버나 데이터베이스 쪽 문제인 경우가 많습니다. 내가 설정을 바꾼 적이 없다면 호스팅 업체에 문의하세요. 다른 메시지라면 캡처한 메시지를 그대로 검색해 보면 같은 문제를 겪은 사람의 해결법이 나오는 경우가 많습니다.</p>
+<p><strong>화면 모양이 깨졌을 때.</strong> 메뉴가 엉뚱한 곳에 있거나 디자인이 갑자기 단순해졌다면 캐시 때문일 수 있습니다. 먼저 브라우저에서 Ctrl + F5로 새로고침하고, 캐시 플러그인의 <strong>캐시 비우기</strong>를 누릅니다. 테마를 바꾼 직후라면 11장으로 돌아가 메뉴와 헤더를 다시 확인하세요.</p>
+<p><strong>업데이트가 실패했을 때.</strong> "예정된 유지보수 때문에 잠시 사용할 수 없습니다"라는 문구가 계속 보이면 업데이트가 중간에 멈춘 것입니다. 몇 분 기다려도 그대로라면, FTP로 접속해 사이트 폴더에 있는 <code>.maintenance</code> 파일을 지우면 풀립니다. 그런 뒤 업데이트를 다시 시도합니다.</p>
+
+<h2><span class="sec">17.3</span>플러그인 충돌 찾는 법</h2>
+<p>문제의 원인이 플러그인인지 확인하는 가장 확실한 방법은 <strong>모두 껐다가 하나씩 켜 보는 것</strong>입니다.</p>
+<ol>
+<li><strong>플러그인 → 설치된 플러그인</strong>에서 목록 위의 체크박스로 전체를 선택합니다.</li>
+<li><strong>일괄 작업</strong>에서 <strong>비활성화</strong>를 고르고 적용합니다.</li>
+<li>사이트를 확인합니다. 문제가 사라졌다면 원인은 플러그인 중 하나입니다.</li>
+<li>플러그인을 <strong>하나씩</strong> 다시 활성화하며 그때마다 사이트를 확인합니다.</li>
+<li>다시 문제가 나타나게 만든 플러그인이 원인입니다. 그 플러그인만 비활성화한 채로 두고, 업데이트를 기다리거나 다른 플러그인으로 바꿉니다.</li>
+</ol>
+<p>관리자 화면에도 들어갈 수 없는 상황이라면 FTP로 접속해 <code>wp-content/plugins</code> 폴더의 이름을 <code>plugins-off</code>처럼 바꿉니다. 그러면 모든 플러그인이 한꺼번에 꺼지고 관리자 화면에 들어갈 수 있습니다. 들어간 뒤에는 폴더 이름을 원래대로 돌리고 위의 순서를 따르면 됩니다.</p>
+<aside class="tip"><span class="label">팁</span><p>원인을 찾기 어렵거나 시간이 급하다면 14장의 백업으로 문제가 생기기 전 시점으로 복원하는 것이 가장 빠른 해결책입니다.</p></aside>
+
+<h2><span class="sec">17.4</span>도움 받는 곳</h2>
+<p>혼자 해결하기 어려울 때 도움을 받을 수 있는 곳은 세 군데입니다.</p>
+<p><strong>호스팅 고객센터</strong>는 서버, 도메인, SSL, 데이터베이스 연결 문제에 가장 빠릅니다. 카페24를 쓴다면 고객센터 1:1 문의를 이용하세요.</p>
+<p><strong>플러그인·테마 지원 포럼</strong>은 특정 플러그인이나 테마의 문제를 물어보는 곳입니다. 공식 저장소의 각 플러그인 페이지에 <strong>지원(Support)</strong> 탭이 있습니다.</p>
+<p><strong>워드프레스 한국어 커뮤니티</strong>에서는 일반적인 사용법을 물어볼 수 있습니다. ko.wordpress.org의 지원 포럼이 대표적입니다.</p>
+<p>질문할 때는 오류 메시지 캡처, 문제가 생기기 직전에 한 일, 이미 시도해 본 방법을 함께 적으세요. 답을 받는 속도가 훨씬 빨라집니다.</p>
+
+<section class="check"><h2>스스로 확인하기 — 17장을 마쳤다면</h2><ul>
+<li>문제가 생기면 오류 메시지부터 캡처한다.</li>
+<li>하얀 화면, 로그인 불가, 오류 메시지, 모양 깨짐, 업데이트 실패의 대처법을 안다.</li>
+<li>플러그인을 모두 껐다가 하나씩 켜서 원인을 찾을 수 있다.</li>
+<li>호스팅 고객센터와 지원 포럼의 위치를 안다.</li>
+</ul></section><p class="next">6부를 마쳤습니다. 이제 지금까지 배운 것을 모아 내 사이트를 완성합니다.</p>
+</div>
+<div class="pn"><a class="prev" href="ch16.html"><small>이전</small>16장 검색 노출과 속도 기초</a><a class="nextc" href="ch18.html"><small>다음</small>18장 실습 프로젝트 — 내 사이트 완성하기</a></div>
+</main></div>
+<script>
+(function(){var b=document.getElementById('menu'),s=document.getElementById('side');
+b.onclick=function(){var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+var a=s.querySelector('.on');if(a&&a.scrollIntoView){var r=a.offsetTop-s.clientHeight/3;s.scrollTop=r>0?r:0}
+document.querySelectorAll('figure img').forEach(function(i){
+ function miss(){var d=document.createElement('div');d.className='imgmiss';d.textContent='그림: '+i.alt;i.replaceWith(d)}
+ if(i.complete&&i.naturalWidth===0)miss();else i.addEventListener('error',miss)});})();
+</script></body></html>

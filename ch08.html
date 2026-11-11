@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>8장. 블록 에디터, 이것만 알면 충분해 | 워드프레스, 이것만 알면 충분해</title>
+<meta name="description" content="워드프레스, 이것만 알면 충분해">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><button id="menu" aria-label="차례 열기" aria-controls="side" aria-expanded="false">차례</button><a href="index.html" class="brand">워드프레스, 이것만 알면 충분해</a></header>
+<div class="layout">
+<nav class="side" id="side" aria-label="차례">
+<a class="home" href="index.html">웹북 소개</a>
+<div class="part">0부 시작하기 전에</div>
+<a class="ch" href="ch00.html"><span class="n">0</span><span class="t">이 웹북 사용법</span></a>
+<a class="ch" href="ch01.html"><span class="n">1</span><span class="t">워드프레스, 딱 이만큼만 이해하기</span></a>
+<div class="part">1부 설치하기</div>
+<a class="ch" href="ch02.html"><span class="n">2</span><span class="t">설치 전에 결정할 것</span></a>
+<a class="ch" href="ch03.html"><span class="n">3</span><span class="t">직접 설치하기 — 워드프레스 다운로드부터</span></a>
+<a class="ch" href="ch04.html"><span class="n">4</span><span class="t">카페24로 쉽게 설치하기</span></a>
+<div class="part">2부 첫 설정과 화면 익히기</div>
+<a class="ch" href="ch05.html"><span class="n">5</span><span class="t">관리자 화면(대시보드) 둘러보기</span></a>
+<a class="ch" href="ch06.html"><span class="n">6</span><span class="t">처음 한 번만 하면 되는 필수 설정</span></a>
+<div class="part">3부 콘텐츠 만들기</div>
+<a class="ch" href="ch07.html"><span class="n">7</span><span class="t">글(Post)과 페이지(Page)</span></a>
+<a class="ch on" href="ch08.html"><span class="n">8</span><span class="t">블록 에디터, 이것만 알면 충분해</span></a>
+<a class="ch" href="ch09.html"><span class="n">9</span><span class="t">이미지와 미디어</span></a>
+<div class="part">4부 디자인 꾸미기</div>
+<a class="ch" href="ch10.html"><span class="n">10</span><span class="t">테마 고르고 적용하기</span></a>
+<a class="ch" href="ch11.html"><span class="n">11</span><span class="t">사이트 편집기로 내 사이트 꾸미기</span></a>
+<div class="part">5부 기능 더하기</div>
+<a class="ch" href="ch12.html"><span class="n">12</span><span class="t">플러그인 기본기</span></a>
+<a class="ch" href="ch13.html"><span class="n">13</span><span class="t">꼭 필요한 플러그인만</span></a>
+<div class="part">6부 운영하고 지키기</div>
+<a class="ch" href="ch14.html"><span class="n">14</span><span class="t">업데이트와 백업</span></a>
+<a class="ch" href="ch15.html"><span class="n">15</span><span class="t">보안 기본 수칙</span></a>
+<a class="ch" href="ch16.html"><span class="n">16</span><span class="t">검색 노출과 속도 기초</span></a>
+<a class="ch" href="ch17.html"><span class="n">17</span><span class="t">문제가 생겼을 때</span></a>
+<div class="part">7부 마무리</div>
+<a class="ch" href="ch18.html"><span class="n">18</span><span class="t">실습 프로젝트 — 내 사이트 완성하기</span></a>
+<a class="ch" href="ch19.html"><span class="n">19</span><span class="t">다음 단계로</span></a>
+<div class="part">부록</div>
+<a class="ch" href="appendix.html"><span class="n">附</span><span class="t">용어집 · 자주 묻는 질문 · 단축키</span></a>
+</nav>
+<main class="content">
+<div class="wb">
+<header class="opener"><div class="kicker">CHAPTER<span class="num">8</span></div><h1>블록 에디터, 이것만 알면 충분해</h1><div class="goals"><span class="label">이 장에서 배울 것</span><ul>
+<li>블록이 무엇인지 이해한다.</li>
+<li>자주 쓰는 블록 10개로 페이지를 만들 수 있다.</li>
+<li>블록을 옮기고, 복제하고, 지울 수 있다.</li>
+<li>패턴으로 완성된 디자인을 빠르게 넣을 수 있다.</li>
+</ul></div></header>
+
+<h2><span class="sec">8.1</span>블록이라는 생각법</h2>
+<p>워드프레스의 글쓰기 화면을 <strong>블록 에디터</strong>라고 부릅니다. 이름처럼 모든 내용을 블록 단위로 다룹니다. 문단 하나가 블록 하나, 사진 한 장이 블록 하나, 버튼 하나가 블록 하나입니다. 페이지는 이런 블록을 위에서 아래로 쌓아 만듭니다.</p>
+<figure><img alt="블록을 쌓아 만드는 페이지" src="images/fig-8-1.png" /><figcaption><b>그림 8-1.</b>제목, 문단, 이미지, 버튼 블록을 차례로 쌓은 페이지</figcaption></figure>
+<p>블록 방식의 장점은 조립이 자유롭다는 것입니다. 순서를 바꾸고 싶으면 블록을 옮기면 되고, 필요 없으면 그 블록만 지우면 됩니다. 블록마다 따로 색이나 크기를 바꿀 수도 있습니다.</p>
+<p>새 블록을 넣는 방법은 두 가지입니다. 화면의 <strong>+</strong> 버튼을 눌러 목록에서 고르거나, 빈 줄에서 슬래시(<code>/</code>)를 입력한 뒤 블록 이름을 치는 것입니다. 예를 들어 <code>/이미지</code>라고 치면 이미지 블록이 바로 나옵니다. 익숙해지면 슬래시 방식이 훨씬 빠릅니다.</p>
+<aside class="slot"><span class="label">그림 자리 IMG-8-1 | 캡처</span>
+<ul>
+<li>내용: 블록 추가 화면 — ① 왼쪽 위 + 버튼을 눌러 펼친 블록 목록 ② 본문에서 "/이미지"를 입력한 모습</li>
+<li>준비 방법: 새 페이지에서 두 상황을 각각 캡처해 나란히 배치</li>
+<li>파일명: img-8-1_블록-추가.png</li>
+</ul></aside>
+
+<h2><span class="sec">8.2</span>꼭 쓰는 블록 10개</h2>
+<p>블록 종류는 아주 많지만 대부분의 페이지는 아래 열 가지로 충분히 만들 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>블록</th>
+<th>쓰임</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>문단</td>
+<td>일반 글. 그냥 입력하면 자동으로 문단 블록이 됩니다.</td>
+</tr>
+<tr>
+<td>제목</td>
+<td>소제목. H2, H3처럼 크기(단계)를 고릅니다.</td>
+</tr>
+<tr>
+<td>이미지</td>
+<td>사진 한 장 넣기</td>
+</tr>
+<tr>
+<td>목록</td>
+<td>글머리 기호나 번호 목록</td>
+</tr>
+<tr>
+<td>버튼</td>
+<td>"문의하기"처럼 클릭을 유도하는 버튼</td>
+</tr>
+<tr>
+<td>표</td>
+<td>간단한 가격표, 일정표</td>
+</tr>
+<tr>
+<td>인용</td>
+<td>다른 사람의 말이나 강조할 문장</td>
+</tr>
+<tr>
+<td>구분자</td>
+<td>내용 사이를 나누는 가로선</td>
+</tr>
+<tr>
+<td>열</td>
+<td>화면을 2~3칸으로 나눠 나란히 배치</td>
+</tr>
+<tr>
+<td>그룹</td>
+<td>여러 블록을 묶어 배경색을 한꺼번에 주기</td>
+</tr>
+</tbody>
+</table>
+<p>제목 블록을 쓸 때는 단계를 지켜 주세요. 본문 안의 큰 소제목은 H2, 그 아래 작은 소제목은 H3를 씁니다. 글자 크기를 키우려고 제목 블록을 쓰는 것이 아니라, 내용의 구조를 알려 주려고 쓰는 것입니다. 검색 엔진도 이 구조를 읽습니다.</p>
+<p>열과 그룹은 처음엔 조금 어렵게 느껴집니다. 열 블록은 큰 상자를 칸으로 나눈 것이고, 각 칸 안에 다시 다른 블록을 넣는다고 이해하면 됩니다. 그룹 블록은 여러 블록을 상자 하나에 담아 함께 옮기거나 배경을 칠할 때 씁니다.</p>
+
+<h2><span class="sec">8.3</span>블록 다루기와 단축키</h2>
+<p>블록을 한 번 클릭하면 블록 위에 작은 <strong>도구 막대</strong>가 나타납니다. 블록 다루기는 거의 모두 이 도구 막대에서 합니다.</p>
+<p>블록을 옮길 때는 도구 막대의 위·아래 화살표를 누르거나, 점 여섯 개 모양의 손잡이를 끌어다 놓습니다. 복제나 삭제는 도구 막대 오른쪽 끝의 점 세 개(옵션) 메뉴에 있습니다. 블록의 색, 글자 크기, 여백 같은 세부 모양은 화면 오른쪽 설정 패널에서 바꿉니다.</p>
+<aside class="slot"><span class="label">그림 자리 IMG-8-2 | 캡처</span>
+<ul>
+<li>내용: 블록을 선택했을 때 나타나는 도구 막대 (이동 화살표, 끌기 손잡이, 옵션 메뉴에 번호 표시) + 오른쪽 블록 설정 패널</li>
+<li>준비 방법: 문단 블록 하나를 선택한 상태로 캡처</li>
+<li>파일명: img-8-2_블록-도구막대.png</li>
+</ul></aside>
+<p>단축키는 세 가지만 기억해도 작업이 빨라집니다. 윈도우 기준이며, 맥에서는 Ctrl 대신 Cmd를 누릅니다.</p>
+<ul>
+<li><strong>Ctrl + Z</strong>: 방금 한 작업 되돌리기</li>
+<li><strong>Ctrl + Shift + D</strong>: 선택한 블록 복제</li>
+<li><strong>Shift + Alt + Z</strong>: 선택한 블록 삭제 (맥은 Ctrl + Option + Z)</li>
+</ul>
+<aside class="tip"><span class="label">팁</span><p>실수로 블록을 지웠거나 엉망이 됐다면 당황하지 말고 Ctrl + Z를 몇 번 누르세요. 발행 전이라면 오른쪽 위의 <strong>리비전</strong>(이전 버전) 기능으로 저장했던 시점으로 돌아갈 수도 있습니다.</p></aside>
+
+<h2><span class="sec">8.4</span>패턴으로 빠르게 만들기</h2>
+<p>블록을 하나씩 쌓는 대신, 디자이너가 미리 조립해 둔 블록 묶음을 통째로 넣을 수 있습니다. 이것을 <strong>패턴</strong>이라고 합니다. 소개 영역, 서비스 안내 3칸, 연락처 영역처럼 자주 쓰는 모양이 준비되어 있습니다.</p>
+<p><strong>+</strong> 버튼으로 블록 목록을 연 뒤 <strong>패턴</strong> 탭을 누르면 테마가 제공하는 패턴이 분류별로 나옵니다. 마음에 드는 패턴을 누르면 페이지에 들어가고, 그 안의 글자와 사진만 내 것으로 바꾸면 됩니다.</p>
+<p class="example"><span class="label">예를 들면</span>회사 소개 페이지를 처음부터 만들려면 제목, 문단, 이미지, 열 블록을 하나하나 쌓고 간격까지 맞춰야 합니다. "소개" 분류의 패턴을 넣으면 이미 보기 좋게 배치된 상태에서 시작하므로, 문구를 바꾸고 사진만 교체하면 5분 안에 그럴듯한 페이지가 완성됩니다.</p>
+
+<section class="check"><h2>스스로 확인하기 — 8장을 마쳤다면</h2><p>이 장의 실습으로 <strong>자기소개 페이지</strong>를 하나 만들어 보세요. 제목 블록 하나, 문단 두 개, 이미지 한 장, "연락하기" 버튼 하나를 넣으면 됩니다.</p>
+<ul>
+<li>+ 버튼과 슬래시(/) 두 가지 방법으로 블록을 넣을 수 있다.</li>
+<li>제목 블록의 H2와 H3를 구분해 쓸 수 있다.</li>
+<li>블록을 옮기고, 복제하고, 지울 수 있다.</li>
+<li>패턴을 하나 넣고 글자를 바꿔 보았다.</li>
+<li>자기소개 페이지를 만들어 미리보기로 확인했다.</li>
+</ul></section><p class="next">다음 장에서는 사진과 미디어를 깔끔하게 다루는 법을 배웁니다.</p>
+</div>
+<div class="pn"><a class="prev" href="ch07.html"><small>이전</small>7장 글(Post)과 페이지(Page)</a><a class="nextc" href="ch09.html"><small>다음</small>9장 이미지와 미디어</a></div>
+</main></div>
+<script>
+(function(){var b=document.getElementById('menu'),s=document.getElementById('side');
+b.onclick=function(){var o=s.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+var a=s.querySelector('.on');if(a&&a.scrollIntoView){var r=a.offsetTop-s.clientHeight/3;s.scrollTop=r>0?r:0}
+document.querySelectorAll('figure img').forEach(function(i){
+ function miss(){var d=document.createElement('div');d.className='imgmiss';d.textContent='그림: '+i.alt;i.replaceWith(d)}
+ if(i.complete&&i.naturalWidth===0)miss();else i.addEventListener('error',miss)});})();
+</script></body></html>
